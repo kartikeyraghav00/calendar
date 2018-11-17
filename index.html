@@ -1,0 +1,200 @@
+<html>
+    <head>
+        <title>calender</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="cal2.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
+    </head>
+<body background="images/156.jpg" style="background-size: cover; background-size: contain;">
+    <div class="progress" id="progress">
+            <div class="progress-bar bg-success" id="bar"> </div>
+      </div>
+      
+    <div id="orient"><span><img src="images/rotate2.png"></span><span>Rotate The Screen</span></div>
+
+      <div class="container">
+      <center><h3></h3></center>
+        <audio id="myAudio1">
+            <source src="images/correct2.MP3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="myAudio2">
+                <source src="images/wrong.MP3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        <audio id="myAudio3">
+                <source src="images/game_over.MP3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+    
+        <div class="col-lg-3 col-md-3 col-sm-1 col-xs-1"> 
+        </div>
+
+        <div class="col-lg-5 col-md-5 col-sm-10 col-xs-12" > 
+            <div id="bigbox">
+                <row>
+                    
+                    <div id="fun1">
+                        <div id="logo" onclick="location.href='https://brainule.com/';" class="col-lg-9 col-md-8 col-sm-8 col-xs-8">
+                            <img src="images/logo.png">
+                        </div>
+
+                        <div id="score" class="col-lg-3 col-md-4 col-sm-4 col-xs-4"><b> Score:<span id="scorevalue">0</span></b>
+                        </div>
+                    </div>
+                </row>
+            <div id="fun2">
+                <div id="prv" class="col-lg-3 col-md-3 col-sm-1 col-xs-4">Prev</div>
+                <div id="yot" class="col-lg-3 col-md-3 col-sm-10 col-xs-4"></div>
+                <div id="nxt" class="col-lg-3 col-md-3 col-sm-1 col-xs-4">Next</div>
+            </div>
+            <div id="da">
+                <div id="dak1" class="doy" >
+                </div>
+                <div id="dak2" class="doy" >
+                </div>
+                <div id="dak3" class="doy" >
+                </div>
+                <div id="dak4" class="doy" >
+                </div>
+                <div id="dak5" class="doy" >
+                </div>
+                <div id="dak6" class="doy" >
+                </div>
+                <div id="dak7" class="doy" >
+                </div>
+            </div>
+
+
+            <div id="week1" class="wk">
+                <div id="dates1" class="dates">
+                </div>
+                <div id="dates2" class="dates">
+                </div>
+                <div id="dates3" class="dates" > 
+                </div>
+                <div id="dates4" class="dates" >
+                </div>
+                <div id="dates5" class="dates" >
+                </div>
+                <div id="dates6" class="dates" >
+                </div>
+                <div id="dates7" class="dates" >
+                </div>
+            </div>
+
+            <div id="week2" class="wk">
+                <div id="dates8" class="dates">
+                </div>
+                <div id="dates9" class="dates">
+                </div>
+                <div id="dates10" class="dates" > 
+                </div>
+                <div id="dates11" class="dates" >
+                </div>
+                <div id="dates12" class="dates" >
+                </div>
+                <div id="dates13" class="dates" >
+                </div>
+                <div id="dates14" class="dates" >
+                </div>
+            </div>
+            
+            <div id="week3" class="wk">
+
+                <div id="dates15" class="dates" >
+                </div>
+                <div id="dates16" class="dates" >
+                </div>
+                <div id="dates17" class="dates" >
+                </div>
+                <div id="dates18" class="dates" >
+                </div>
+                <div id="dates19" class="dates" >
+                </div>
+                <div id="dates20" class="dates" >
+                </div>
+                <div id="dates21" class="dates" >
+                </div>
+            </div>
+
+            <div id="week4" class="wk">
+
+                <div id="dates22"  class="dates">
+                </div>
+                <div id="dates23"  class="dates">
+                </div>
+                <div id="dates24"  class="dates">
+                </div>
+                <div id="dates25"  class="dates">
+                </div>
+                <div id="dates26"  class="dates">
+                </div>
+                <div id="dates27"  class="dates">
+                </div>
+                <div id="dates28"  class="dates">
+                </div>
+            </div>
+
+             <div id="week5" class="wk">
+
+                   <div id="dates29"  class="dates">
+                  </div>
+                   <div id="dates30"  class="dates">
+                  </div>
+
+                   <div id="dates31"  class="dates">
+                  </div>
+                   <div id="dates32"  class="dates">
+                  </div>
+                   <div id="dates33"  class="dates">
+                  </div>
+                   <div id="dates34"  class="dates">
+                  </div>
+                   <div id="dates35" class="dates">
+                  </div>
+            </div>
+
+                <div id="week6" class="wk">
+
+                   <div id="dates36"  class="dates">
+                  </div>
+                   <div id="dates37"  class="dates">
+                  </div>
+
+                   <div id="dates38"  class="dates">
+                  </div>
+                   <div id="dates39"  class="dates">
+                  </div>
+                   <div id="dates40"  class="dates">
+                  </div>
+                   <div id="dates41"  class="dates">
+                  </div>
+                   <div id="dates42" class="dates">
+                  </div>
+            </div>
+
+            <div id="fun">
+                  <center><h3 id="quest">Press The Key To Start</h3></center>
+                <row>
+                  <div id="startreset" class="col-lg-6 col-md-6 col-sm-5 col-xs-6"><b>Start Game</b></div>
+                  <div id="timeremaining" class="col-lg-6 col-md-6 col-sm-5 col-xs-6"><b>Time: <span id="timeremainingvalue">60</span>sec</b></div>
+                </row>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-1 col-xs-1">
+    </div>
+</div>
+    
+    
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js">
+    </script>
+ <script  src="cal2.js">
+</script>
+
+</body>
+</html>

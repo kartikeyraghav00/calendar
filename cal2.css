@@ -1,0 +1,233 @@
+#fun2 {
+    height: 50px;
+    width: auto;
+    border: 2px solid white;
+    background-color:black;
+/*    right:10px;*/
+    text-align: center;
+    cursor: pointer;
+    display:flex;
+}
+#logo{
+/*    max-width: 100%;*/
+    position: relative;
+    top:10%;
+    left: 0%;
+    cursor: pointer;
+    z-index: 2;
+    
+}
+#prv {
+    height:30px;
+    width:auto;
+    font-weight:700;
+    position:relative;
+    left:5%;
+    top:7px;
+    border-radius: 5px;
+    background-color:white;
+    text-align: center;
+    cursor: pointer;
+    padding:5px;
+}
+#yot {
+    height:30px;
+    width:390px;
+    font-size:32px;
+    text-align: center;
+    color: white;
+
+
+}
+#nxt {
+    height:30px;
+    padding:5px;
+    border-radius: 5px;
+    width:auto;
+    font-weight:700;
+    right:5%;
+    position:relative;
+    top:7px;
+    cursor: pointer;
+    background-color:white;
+    text-align: center;
+
+}
+.doy{
+    height: 50px;
+    width: 14.28%;
+    border: 1px solid black;
+    font-size:1.40em;
+    color:black;
+    line-height: 40px;
+    text-align: center;
+   
+   /* display:flex;*/
+
+}
+.wk{
+ 
+    height: 50px;
+    width: auto;
+    border:1px solid white;
+    font-size:auto;
+    line-height: 40px;
+    background-image: linear-gradient(2deg,grey,white);
+    background-color:black;
+    color:black;
+    display:flex;
+}
+.dates{
+
+    height: 50px;
+    width: 14.28%;
+    border: 1px solid white;
+    font-size:1.40em;
+    line-height: 40px;
+    color:black;
+    cursor: pointer;
+    text-align: center;
+    font-weight:bold;
+
+}
+#bigbox{
+    width: auto;
+    height: 100vh;
+    
+    
+}
+#da {  height: 50px;
+    width: auto;
+    border: 1px solid black;
+    background-color: white;
+    display:flex;
+    cursor: pointer;
+}
+/*
+#container {
+    text-align:center;
+    width:600px;
+    height: 600px;
+    top:30px;
+    display:flex;
+
+}
+*/
+#fun1 {
+    height:60px;
+    width:auto;
+    background-color:black;
+    border: 2px solid black;
+/*    padding-top:10px; */
+    background-image: linear-gradient(-90deg,white,grey);
+
+
+}
+
+#fun {
+  height:140px;
+  width:auto;
+    background-image: linear-gradient(-90deg,white,grey);
+
+/*  background-color:pink;
+*/     border: 1px solid black;
+}
+
+ #startreset {
+      max-width:  40%;
+      height:50px;
+      background-image: linear-gradient(white,grey);
+      text-align: center;
+      font-size:auto; 
+      margin-left:2%;
+      font-weight: 700;
+      padding:12px;
+      border-radius:5px;
+       cursor:pointer;
+      box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+/*      position:relative;*/
+      transition: all 0.2s;
+      -webkit-transition: all 0.2s;
+      -moz-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      -ms-transition: all 0.2s;
+  }
+    #timeremaining {
+      max-width:  40%;
+      height:50px;
+      position:relative;
+      padding:12px;
+      font-size:auto; 
+      margin-left:15%;
+      text-align: center;
+      background-image: linear-gradient(white,grey);
+      border-radius:3px;
+      box-shadow:0px 4px rgba(0, 0, 0, 0.2);
+      display:none;
+  }
+
+#score {
+    max-width:auto;
+    height:40px;
+    font-size:auto;
+    line-height: 30px;
+    background-color: black;
+    color:white;
+    padding:4px;
+    text-align:center;
+    position:relative;
+    top: 15%;
+    right: 2%;
+    border-radius: 5px;
+    box-shadow: 0px 4px 0px white;
+}
+
+@media (orientation:landscape)and (max-width:900px){
+    #bigbox{
+        
+        display: none;
+        
+    }
+    #orient{
+        text-align: center;
+        position: relative;
+        top:20%;
+        font-size:50px;
+        display:block;
+        
+    }
+    
+    
+}
+@media (orientation:landscape)and (min-width:900px){
+
+    #orient{
+        display:none;
+        
+    }
+    
+    
+}
+@media (orientation:portrait){
+    #bigbox{
+        
+        display: block;
+        
+    }
+    
+    #yot {
+    line-height: 45px;
+    font-size:22px;
+    }
+    
+    #ques{
+    font-size:22px;
+    }
+    
+    #orient{
+        
+        display:none;
+    }
+    
+    
+}
